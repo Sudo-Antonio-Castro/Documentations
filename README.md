@@ -3,10 +3,12 @@ Document all external ports, if you can open your desktop also identify all inte
 If you have a laptop:
 
 Use system tools to identify motherboard / platform details
+
 Collect screenshots: 
 System Information (Model/Bios), 
 Device Manager (Network adapters, Display adapters), 
 Storage type (disk drives / task manager) (HDD/SATA SSD, NVMe SSD (Capacity vs storage left))
+
 OS Name
 In general (specs)
 Manufacturer and Model of Device
@@ -15,11 +17,6 @@ Cores + threads
 RAM Amount
 RAM Speed 
 On board or dedicated GPU (Model?)
-
-UEFI or Legacy BIOS Mode?
-Secure Boot Enabled?
-Do you have a TPM?
-
 
 We will be doing activities today! and adding to our GitHub!
 
@@ -63,5 +60,16 @@ NVIDIA GeForce RTX 3060
 ```
 
 ### How To:
-Use PowerShell to retrieve this information
+Use PowerShell to retrieve this information:
+- OS name, version, 32/62 bit
+- CPU model & Cores/threads
+- RAM Modules Size + Speed
+- Storage Model + Type (NVMe/SATA) + Media Type + Size
+- GPU
+
+## Example
+**Find out your current TimeZone**
+```powershell
+Get-TimeZone
+```
 
